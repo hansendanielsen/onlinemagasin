@@ -1,0 +1,318 @@
+/**
+ * fil: css/mathilde.style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --lavender: #CAC5CC;
+  --white: #ffffff;
+  --sand: #EAC0AE;
+  --green: #729D58;
+  --purple: #7D6167;
+  --orange: #C46931;
+  --hvid: #F7FBEE;
+  --footer: #f7f4f3;
+  --sort: #1F1F1E;
+  /* fonte */
+}
+/*
+font-family: 'Cormorant', serif;
+font-family: 'Cormorant Infant', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+  */
+
+/* Her bruges en variabel: --blue */
+body {
+  background-color: var(--white);
+  margin: auto;
+}
+
+/* Header */
+header {
+  padding: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 50px;
+}
+
+#headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu {
+  justify-content: flex-start;
+  width: 30%;
+}
+
+.logohead {
+  justify-content: center;
+  width: 30;
+}
+
+.fyld {
+  justify-content: flex-end;
+  width: 30%;
+}
+
+/* Menu-kanppen */
+.dropbtn {
+  margin-right: 70px;
+  margin-top: 5px;
+  border: none;
+  max-height: 20px;
+  background-color: var(--white);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: var(--white);
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  float: right;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Layout */
+#video {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.landing {
+  max-width: 100%;
+  min-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.line {
+border-bottom: 5px solid red;
+border-color: var(--lavender);
+}
+
+#overskrift {
+  text-align: center;
+  margin: auto;
+  margin: 5%;
+}
+
+.bbb2 {
+  margin: auto;
+  font-size: 20px;
+  width: 60%
+}
+
+
+#ommathilde {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 5px solid red;
+  border-top: 5px solid red;
+  border-color: var(--lavender);
+
+}
+
+.tekst {
+  display: block;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#gang {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  vertical-align: center;
+  padding-bottom: 20px;
+}
+
+.streg {
+border-bottom: 5px solid red;
+border-color: var(--lavender);
+width: 50%;
+margin: auto;
+}
+
+#podcast {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 27%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+
+#omuddannelsen {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#rutsjebane {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  vertical-align: center;
+  padding-bottom: 20px;
+
+}
+
+.pris {
+  text-align: center;
+  color: var(--sort);
+  font-size: 20px;
+  padding: 5px;
+}
+
+#skolen {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+div p a {
+  text-decoration: none;
+  color: var(--sort);
+}
+
+#sidste {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  vertical-align: center;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* footer */
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  height: 250px;
+  margin-top: 10px;
+  background-color: var(--footer);
+  padding-top: 20px;
+}
+
+.footermenu {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: var(--sort);
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+
+.atype {
+  text-decoration: none;
+  color: var(--sort);
+  display: block;
+  list-style-type: square;
+  padding: 5px;
+  line-height: 2.5;
+}
+
+
+
+.logofooter {
+  justify-content: center;
+  text-align: center;
+  font-style: oblique;
+}
+
+.socialmedie{
+  justify-content: flex-end;
+  padding-right: 3%;
+}
+
+.btype {
+  display: inline-block;
+  padding: 5px;
+}
+
+/* Typografi */
+h1 {
+  font-size: 50px;
+  color: var(--sort);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h2 {
+  font-size: 18px;
+  color: var(--sort);
+  font-family: 'Poppins';
+  line-height: 2.5;
+
+}
+
+h3 {
+  font-size: 30px;
+  color: var(--sort);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: bold;
+  line-height: 2.5;
+
+}
+
+h4 {
+  font-size: 16px;
+  color: var(--sort);
+  font-family: 'Poppins';
+  padding-bottom: 2px;
+  line-height: 2.5;
+}
+
+h5 {
+  font-size: 18px;
+  color: var(--sort);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2.5;
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+}
